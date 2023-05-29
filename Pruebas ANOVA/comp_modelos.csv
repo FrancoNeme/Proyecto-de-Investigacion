@@ -1,0 +1,20 @@
+
+COMPARACION 1_2
+"","call","Model","df","AIC","BIC","logLik"
+"mlm.modelo.001_C_B_REML","gls(model = C_B ~ 1 + sp + DAP + t + sp:DAP + sp:t + DAP:t +     sp:DAP:t, data = archivo_datos, correlation = corCompSymm(form = ~1 |     Corrida_sp/Corrida_DAP), method = ""REML"", na.action = na.omit)",1,38,268.6980432235,355.21135574611,-96.3490216117501
+"mlm.modelo.002_C_B_REML","gls(model = C_B ~ 1 + sp + DAP + t + sp:DAP + sp:t + DAP:t +     sp:DAP:t, data = archivo_datos, correlation = corAR1(form = ~as.integer(as.numeric(t)) |     Corrida_sp/Corrida_DAP), method = ""REML"", na.action = na.omit)",2,38,267.351757457561,353.865069980172,-95.6758787287807
+
+COMPARACION 2_3
+"","call","Model","df","AIC","BIC","logLik","Test","L.Ratio","p-value"
+"mlm.modelo.002_C_B_REML","gls(model = C_B ~ 1 + sp + DAP + t + sp:DAP + sp:t + DAP:t +     sp:DAP:t, data = archivo_datos, correlation = corAR1(form = ~as.integer(as.numeric(t)) |     Corrida_sp/Corrida_DAP), method = ""REML"", na.action = na.omit)",1,38,267.351757457561,353.865069980172,-95.6758787287807,"",NA,NA
+"mlm.modelo.003_C_B_REML","gls(model = C_B ~ 1 + sp + DAP + t + sp:DAP + sp:t + DAP:t +     sp:DAP:t, data = archivo_datos, correlation = corAR1(form = ~as.integer(as.numeric(t)) |     Corrida_sp/Corrida_DAP), weights = varComb(varIdent(form = ~1 |     t)), method = ""REML"", na.action = na.omit, control = glsControl(msMaxIter = 3000))",2,43,266.617514492315,364.514157610005,-90.3087572461575,"1 vs 2",10.7342429652465,0.0569113331198365
+
+COMPARACION 2_4
+"","call","Model","df","AIC","BIC","logLik","Test","L.Ratio","p-value"
+"mlm.modelo.002_C_B_REML","gls(model = C_B ~ 1 + sp + DAP + t + sp:DAP + sp:t + DAP:t +     sp:DAP:t, data = archivo_datos, correlation = corAR1(form = ~as.integer(as.numeric(t)) |     Corrida_sp/Corrida_DAP), method = ""REML"", na.action = na.omit)",1,38,267.351757457561,353.865069980172,-95.6758787287807,"",NA,NA
+"mlm.modelo.004_C_B_REML","gls(model = C_B ~ 1 + sp + DAP + t + sp:DAP + sp:t + DAP:t +     sp:DAP:t, data = archivo_datos, correlation = corSymm(form = ~as.integer(as.numeric(t)) |     Corrida_sp/Corrida_DAP), weights = varComb(varIdent(form = ~1 |     t)), method = ""REML"", na.action = na.omit, control = glsControl(msMaxIter = 3000))",2,57,262.731693794947,392.501662578862,-74.3658468974733,"1 vs 2",42.6200636626148,0.00146058206543176
+
+COMPARACION 3_4
+"","call","Model","df","AIC","BIC","logLik","Test","L.Ratio","p-value"
+"mlm.modelo.003_C_B_REML","gls(model = C_B ~ 1 + sp + DAP + t + sp:DAP + sp:t + DAP:t +     sp:DAP:t, data = archivo_datos, correlation = corAR1(form = ~as.integer(as.numeric(t)) |     Corrida_sp/Corrida_DAP), weights = varComb(varIdent(form = ~1 |     t)), method = ""REML"", na.action = na.omit, control = glsControl(msMaxIter = 3000))",1,43,266.617514492315,364.514157610005,-90.3087572461575,"",NA,NA
+"mlm.modelo.004_C_B_REML","gls(model = C_B ~ 1 + sp + DAP + t + sp:DAP + sp:t + DAP:t +     sp:DAP:t, data = archivo_datos, correlation = corSymm(form = ~as.integer(as.numeric(t)) |     Corrida_sp/Corrida_DAP), weights = varComb(varIdent(form = ~1 |     t)), method = ""REML"", na.action = na.omit, control = glsControl(msMaxIter = 3000))",2,57,262.731693794947,392.501662578862,-74.3658468974733,"1 vs 2",31.8858206973683,0.004158449427502

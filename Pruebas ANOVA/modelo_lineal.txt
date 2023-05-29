@@ -1,0 +1,28 @@
+MODELO ELEGIDO:
+---------------
+
+gls
+C_B ~ 1 + sp + DAP + t + sp:DAP + sp:t + DAP:t + sp:DAP:t
+archivo_datos
+corAR1(form = ~as.integer(as.numeric(t)) | Corrida_sp/Corrida_DAP)
+varComb(varIdent(form = ~1 | t))
+REML
+na.omit
+glsControl(msMaxIter = 3000)
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+NORMALIDAD:
+-----------
+
+Test de Lilliefors:
+-------------------
+
+Estadístico D = 0.0652649111399234
+p-valor = 0.311503192512889
+
+Test de Shapiro-Wilks:
+----------------------
+
+Estadístico W = 0.967570391231514
+p-valor = 0.00970592348222391
