@@ -1,3 +1,3 @@
 # Proyecto-de-Investigacion
 
-Análisis estadístico de dos efectos sobre el crecimiento de levaduras. Por el momento, lo único que es público.
+Scripts desarrollados a lo largo del proyecto de investigación.
