@@ -35,10 +35,10 @@ archivo_datos <- archivo_datos[order(archivo_datos$t),]
 
 # ___ Casteo de variables
 
-# Convertir la columna "Temperatura" a tipo factor
+# Convertir la columna "sp" a tipo factor
 archivo_datos$sp <- as.factor(archivo_datos$sp)
 
-# Convertir la columna "N0" a tipo factor
+# Convertir la columna "DAP" a tipo factor
 archivo_datos$DAP <- as.factor(archivo_datos$DAP)
 
 # Convertir la columna "Tiempo" a tipo factor
@@ -49,10 +49,10 @@ archivo_datos$t <- as.factor(as.character(archivo_datos$t))
 archivo_datos$C_B <- as.numeric(archivo_datos$C_B)
 #archivo_datos$C_B <- log10(as.numeric(archivo_datos$C_B))
 
-# Convertir la columna "Corrida_T" a tipo factor
+# Convertir la columna "Corrida_sp" a tipo factor
 archivo_datos$Corrida_sp <- as.factor(archivo_datos$Corrida_sp)
 
-# Convertir la columna "Corrida_N0" a tipo factor
+# Convertir la columna "Corrida_DAP" a tipo factor
 archivo_datos$Corrida_DAP <- as.factor(archivo_datos$Corrida_DAP)
 
 
